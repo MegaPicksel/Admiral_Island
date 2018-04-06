@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="{% static '/info/style.css' %}"/>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Telex" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+<body>
+
+<!--navbar-->
+<section id="topNav">
+<nav class="navbar navbar-light sticky-top">
+    <div class="container justify-content-center">
+        <ul class="row">
+             <ul>
+                <a class="nav-link" href="{% url 'home' %}">Home</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'admiral_island' %}">Admiral Island</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'port_owen' %}">Port Owen</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'about' %}">About</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            </ul>
+        </ul>
+    </div>
+</nav>
+</section>
+<br>
+
+<!--body-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <div class="conatiner">
+                <h1>Port Owen</h1>
+                    <p>
+                    Port Owen is a small suburb nestled between Velddrif and Laaiplek, along a man made marina development
+                    offering 3.5 km of private waterways in a horseshoe shape  with two exits to the Berg River, just a short sail
+                    to the rivermouth into St Helena Bay.  It consists of private homes, sectional title flats and popular timeshare
+                    blocks.  Over the past years the suburb has shown excellent growth in property values and is popular with yachtsmen,
+                    powerboaters, fishermen, birdlovers and those simple seeking a tranquil lifestyle far from the bustle of Cape Town
+                    yet serviced by a selection of shops, doctors, shools, restaurants and a short trip to the sandy beaches of Laaiplek.
+                    Port Owen includes the upmarket Admiral Island, surrounded by the marina on three sides and the Berg River to the south
+                    with CCTV cameras along the river bank, and access via controlled manned security booth with the road leading over the
+                    marina to the housing development,  secure, peaceful, the perfect place to call home.
+                    </p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="container" id="aboutImage1">
+                    <div class="img">
+                        <img src="{% static 'info/images/marina_to_mouth.jpg' %}" class="rounded"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            <br>
+    <div class="row">
+        <div class="col-4">
+            <div class="container" id="aboutImage2">
+                <div class="img">
+                    <img src="{% static 'info/images/river_to_st_helena_bay.jpeg' %}" class="rounded"/>
+                </div>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="container">
+                <h1>Velddrif</h1>
+                    <p>
+                        The village of Velddrif is situated about two kilometers inland from the Berg Rivermouth into St Helena Bay,
+                        first discovered by Vasco da Gama in 1497 in a search for fresh water.  In 1693 a Dutch ship, Die Gouden Buys,
+                        ran aground south of the river mouth with two survivors being found by a Hottentot clan.
+                        The Dutch authorities were notified and ships were sent to rescue the two seamen and salvage the cargo.
+                        These travelers explored the plentiful fishing in the Bay, and over the next few years people from the
+                        Cape started visiting to explore this fishing haven.
+                        A farmer named Theunis Smit then settled here and started using the drift to access grazing fields (veld) with
+                        the town being established in 1946 and becoming a municipality in 1960.
+                        The Carinus Bridge was completed in 1959 to replace the pont that had been put in place, and is still the gateway
+                        to Velddrif, and the finishing line for the now famous annual Berg River Canoe marathon.
+                    </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="conatiner">
+                    <h1>Laaiplek</h1>
+                    <p>
+                        The town of Laaiplek was founded by a European named Carl Stephan who heard about the good fishing in the Bay,
+                        and he and his brothers settled at the Berg River mouth and soon had a shipping, fishing and farming business going.
+                        Laaiplek (loading place) became the harbour and ships navigated their way around treacherous sandbanks into the Berg River.
+                        In 1968 the Cape authorities blew a channel through the sandbank at the rivermouth and the formal fishing harbour of Laaiplek
+                        was completed.  The famous “Daar kom die Alibama” folksong originated from the ship coming into Laaiplek to load “riet” (reed)
+                        to take to Knysna and surrounds to thatch early settlers’ homes, with remnants of the old jetty off the beach.
+                        The fishing industry here flourished with the main industry being canning factories and making of fish meal.
+                        The main centre of the town with supermarkets, shops and doctors.
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <div class="container" id="aboutImage3">
+                        <div class="img">
+                            <img src="{% static 'info/images/laaiplek_jetty.JPG' %}" class="rounded"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+
+<!--Footer-->
+
+<footer>
+    <div class="container">
+        <div class="row justify-content-center">
+            <ul>
+                <a class="nav-link" href="{% url 'home' %}">Home</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'admiral_island' %}">Admiral Island</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'port_owen' %}">Port Owen</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'about' %}">About</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

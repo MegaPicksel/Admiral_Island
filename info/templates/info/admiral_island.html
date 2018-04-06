@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admiral Island</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="{% static '/info/style.css' %}"/>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Telex" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+<body>
+
+<!-- navbar -->
+<section id="topNav">
+<nav class="navbar navbar-light sticky-top">
+    <div class="container justify-content-center">
+        <ul class="row">
+            <ul>
+                <a class="nav-link" href="{% url 'home' %}">Home</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'admiral_island' %}">Admiral Island</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'port_owen' %}">Port Owen</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'about' %}">About</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            </ul>
+        </ul>
+    </div>
+</nav>
+</section>
+<br>
+
+<!--body-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <div class="conatiner">
+                <h1>Admiral Island</h1>
+                    <p>
+                        Admiral Island is a manned security homeowners’ estate set in Port Owen.
+                        The only road access is via the security hut and the bridge over the marina onto the Island.
+                        The Island is surrounded by water, as it is situated in the fold of the marina and the Berg River.
+                        CCTV cameras along the banks of the Berg River are controlled from the security hut.
+                        Homes are generally upmarket, with starting point in the early R2ms for a property away from the water,
+                        and around R3m upwards for waterfront homes. There are a number of open areas for all to enjoy, including a fully fenced dog park
+                        where your furry friends can have a safe romp. Security record on the island must surely be one of the best in this country.
+                    </p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="container" id="aboutImage1">
+                    <div class="img">
+                        <img src="{% static 'info/images/yacht_basin.jpg' %}" class="rounded"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--Footer-->
+
+<footer>
+    <div class="container">
+        <div class="row justify-content-center">
+            <ul>
+                <a class="nav-link" href="{% url 'home' %}">Home</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'admiral_island' %}">Admiral Island</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'port_owen' %}">Port Owen</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'about' %}">About</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Port OWen</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="{% static '/info/style.css' %}"/>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Telex" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+<body>
+
+<!-- navbar -->
+<section id="topNav">
+<nav class="navbar navbar-light sticky-top">
+    <div class="container justify-content-center">
+        <ul class="row">
+             <ul>
+                <a class="nav-link" href="{% url 'home' %}">Home</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'admiral_island' %}">Admiral Island</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'port_owen' %}">Port Owen</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'about' %}">About</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            </ul>
+        </ul>
+    </div>
+</nav>
+</section>
+<br>
+
+<!--body-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <div class="conatiner">
+                <h1>Port Owen</h1>
+                    <p>
+                        Port Owen is a suburb of Velddrif, built around a manmade u-shaped marina which leads off the Berg River,
+                        just a short distance through Laaiplek to the rivermouth and into St Helena Bay.
+                        This is the perfect place for yachting, boating, fishing, birdwatching or simply experiencing a tranquil and
+                        relatively safe lifestyle.
+                        Velddrif offers supermarkets, a variety of shops, doctors, dentists, schools, a local vet – all one could require.
+                        A short 20 kms to Vredenburg to top quality hospitals, both government and private, and a self sustained commercial
+                        industrial area for all your requirements.  WestCoast Mall offers the normal chain stores and restaurants.
+                    </p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="container" id="aboutImage1">
+                    <div class="img">
+                        <img src="{% static 'info/images/marina_to_mouth.jpg' %}" class="rounded"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!--Footer-->
+
+<footer>
+    <div class="container">
+        <div class="row justify-content-center">
+             <ul>
+                <a class="nav-link" href="{% url 'home' %}">Home</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'admiral_island' %}">Admiral Island</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'port_owen' %}">Port Owen</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'about' %}">About</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admiral Island</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="{% static '/info/style.css' %}"/>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Telex" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+<body>
+<!-- navbar -->
+
+<section id="topNav">
+<nav class="navbar navbar-light sticky-top">
+    <div class="container justify-content-center">
+        <div class="row">
+            <ul>
+                <a class="nav-link" href="{% url 'home' %}">Home</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'admiral_island' %}">Admiral Island</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'port_owen' %}">Port Owen</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'about' %}">About</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            </ul>
+        </div>
+    </div>
+</nav>
+</section>
+<!-- body -->
+
+<section id="homePage">
+<div class="container">
+<div class="row">
+        <div class="col-3">
+
+        </div>
+        <div class="col-6">
+               <div id="welcome" class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                   <h1 class="display-4">Welcome!</h1>
+                   <h4>
+                       Situated where the Berg River flows into the mighty South Atlantic, Admiral Island and Port Owen are one of the West Coasts
+                       best kept secrets.
+                   </h4>
+               </div>
+        </div>
+        <div class="col-3">
+
+        </div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+        <div class="col-4" id="card1">
+            <div class="card" style="width: 22rem;">
+                <div class="card-header">
+                    <h4>Port Owen</h4>
+                </div>
+                <img class="card-img-top"  src="{% static 'info/images/greater_area.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                        <h5 class="card-text">Port Owen, a perfect holiday destination.</h5>
+                    <button><a href="{% url 'port_owen' %}" style="color: #FF5B33"><h6>View Info</h6></a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-4" id="card2">
+            <div class="card" style="width: 22rem;">
+                <div class="card-header">
+                    <h4>Admiral Island</h4>
+                </div>
+                <img class="card-img-top"  src="{% static 'info/images/yacht_basin_exit.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                        <h5 class="card-text">Admiral Island, a great place to unwind.</h5>
+                    <button><a href="{% url 'admiral_island' %}" style="color: #FF5B33"><h6>View Info</h6></a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-4" id="card3">
+            <div class="card" style="width: 22rem;">
+                <div class="card-header">
+                    <h4>About</h4>
+                </div>
+                <img class="card-img-top" src="{% static 'info/images/yachts_in_river.JPG' %}" alt="Card image cap">
+                <div class="card-body">
+                        <h5 class="card-text">Some information about the area.</h5>
+                    <button><a href="{% url 'about' %}" style="color: #FF5B33"><h6>View Info</h6></a></button>
+                </div>
+            </div>
+        </div>
+</div>
+<br>
+</div>
+<br>
+</section>
+<!--Footer-->
+
+<footer>
+    <div class="container">
+        <div class="row justify-content-center">
+            <ul>
+                <a class="nav-link" href="{% url 'home' %}">Home</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'admiral_island' %}">Admiral Island</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'port_owen' %}">Port Owen</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'about' %}">About</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

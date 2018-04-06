@@ -1,0 +1,12 @@
+Hi Cheryl,
+
+This is a new message from the Port Owen, Admiral Island website, details are as follows:
+
+Name: {{name}}
+
+Contact number: {{contact}}
+
+Contact email: {{email}}
+
+Message: {{message}}
+
